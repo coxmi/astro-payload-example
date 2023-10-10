@@ -1,0 +1,10 @@
+{
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+		"paths": {
+			"@/*": ["./*"]
+		},
+	}
+}
