@@ -1,6 +1,6 @@
 import { mongooseAdapter } from "@payloadcms/db-mongodb"
 import { slateEditor } from "@payloadcms/richtext-slate"
-import { viteBundler } from "@payloadcms/bundler-vite"
+import { webpackBundler } from "@payloadcms/bundler-webpack"
 import { buildConfig } from "payload/config"
 import path from 'path'
 import Users from './collections/Users'
@@ -14,7 +14,7 @@ export default buildConfig({
 	admin: {
 		user: Users.slug,
 		buildPath: path.resolve(process.cwd(), '.build/payload-client'),
-		bundler: viteBundler(),
+		bundler: webpackBundler(),
 	},
 	editor: slateEditor({}),
 	db: mongooseAdapter({

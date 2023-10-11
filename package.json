@@ -16,7 +16,7 @@
   "dependencies": {
     "@astrojs/node": "^6.0.0",
     "@astrojs/preact": "^3.0.0",
-    "@payloadcms/bundler-vite": "^0.1.2",
+    "@payloadcms/bundler-webpack": "^0.1.2",
     "@payloadcms/db-mongodb": "^1.0.2",
     "@payloadcms/richtext-slate": "^1.0.1",
     "astro": "^3.2.3",
